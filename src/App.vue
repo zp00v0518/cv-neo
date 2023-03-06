@@ -1,17 +1,18 @@
 <template>
   <HeaderCv> </HeaderCv>
-  <hr>
+  <hr />
   <main>
-    
+    <SidebarCv></SidebarCv>
   </main>
 </template>
 
 <script>
 import HeaderCv from './components/organism/HeaderCv'
+import SidebarCv from './components/organism/SidebarCv'
 
 export default {
   name: 'App',
-  components: {HeaderCv}
+  components: {HeaderCv, SidebarCv}
 }
 </script>
 
@@ -25,5 +26,9 @@ export default {
   border-color: white;
   opacity: 0.5;
   height: 0px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 </style>

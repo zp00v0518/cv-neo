@@ -1,3 +1,3 @@
-import SidebarCv from './SidebarCv'
+import SidebarCv from './SidebarCv.vue'
 
 export default SidebarCv
