@@ -13,6 +13,10 @@
 
     --border-radius: 10px;
 }
+ html {
+    font-size: 14px;
+    color: var(--txt-primary-color)
+ }
 body {
     font-family: 'Roboto Flex', sans-serif;
     background: var(--bg);

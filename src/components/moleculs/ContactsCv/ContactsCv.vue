@@ -39,9 +39,9 @@ export default {
 <style>
 .contacts {
   display: flex;
-  gap: var(--padding)
+  gap: var(--padding);
 }
 .contacts .badge-btn__icon {
-  color: red;
+  color: #2d9cdb;
 }
 </style>
