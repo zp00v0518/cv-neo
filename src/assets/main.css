@@ -1,1 +1,20 @@
+:root {
+    --bg--light: #E9EAF0;
+    --txt-primary-color-light: #4F4F4F;
+    --txt-secondary-color-light: ##828282;
 
+    --bg: var(--bg--light);
+    --txt-primary-color: var(--txt-primary-color-light);
+    --txt-secondary-color: var(--txt-secondary-color-light);
+
+    --padding-step: 5px;
+    --padding: 10px;
+    --padding-double: calc(var(--padding) * 2);
+
+    --border-radius: 10px;
+}
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background: var(--bg);
+    font-size: 14px;
+}

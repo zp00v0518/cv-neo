@@ -1,13 +1,15 @@
 <template>
-  <BadgeBtn></BadgeBtn>
+  <HeaderCv>
+  </HeaderCv>
 </template>
 
 <script>
-import BadgeBtn from './components/BdgeBtn.vue'
+import HeaderCv from './components/organism/HeaderCv'
+
 
 export default {
   name: 'App',
-  components: { BadgeBtn }
+  components: { HeaderCv }
 }
 </script>
 
