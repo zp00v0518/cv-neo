@@ -1,10 +1,14 @@
-<script>
-</script>
-
 <template>
-  <div></div>
+  <BadgeBtn></BadgeBtn>
 </template>
 
-<style>
+<script>
+import BadgeBtn from './components/BdgeBtn.vue'
 
-</style>
+export default {
+  name: 'App',
+  components: { BadgeBtn }
+}
+</script>
+
+<style></style>
