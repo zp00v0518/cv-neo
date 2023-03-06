@@ -47,5 +47,9 @@ export default {
   border-radius: var(--border-radius);
   border: 1px solid;
 }
+
+.badge-btn__icon {
+  width: 15px;
+}
 </style>
  
