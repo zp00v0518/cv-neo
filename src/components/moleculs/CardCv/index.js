@@ -1,3 +1,3 @@
-import CardCv from './CardCv'
+import CardCv from './CardCv.vue'
 
 export default CardCv

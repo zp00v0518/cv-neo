@@ -27,8 +27,4 @@ export default {
   opacity: 0.5;
   height: 0px;
 }
-main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
 </style>
