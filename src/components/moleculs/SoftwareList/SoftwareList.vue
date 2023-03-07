@@ -23,14 +23,13 @@ export default {
     return {
       list: [
         {name: 'VsCode', lvl: 5},
+        {name: 'Npm', lvl: 5},
+        {name: 'Skype', lvl: 5},
         {name: 'Jira', lvl: 4},
         {name: 'Trello', lvl: 4},
         {name: 'Figma', lvl: 4},
-        {name: 'Telegram', lvl: 5},
         {name: 'Slack', lvl: 4},
-        {name: 'Skype', lvl: 5},
         {name: 'GitLab', lvl: 4},
-        {name: 'Npm', lvl: 5}
       ]
     }
   }

@@ -14,7 +14,6 @@ import HeaderCv from './components/organism/HeaderCv'
 import SidebarCv from './components/organism/SidebarCv'
 import ExperienceCv from './components/organism//ExperienceCv'
 
-
 export default {
   name: 'App',
   components: {HeaderCv, SidebarCv, ExperienceCv}
@@ -34,15 +33,16 @@ export default {
   margin-block-end: var(--padding-double);
   overflow: hidden;
 }
-.header__sticky{
+.header__sticky {
   position: sticky;
   top: 0px;
   background: var(--bg-primary);
 }
 main {
+  --gap: calc(var(--padding-double) * 2);
   width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    column-gap: calc(var(--padding-double) * 2);
+  display: grid;
+  grid-template-columns: 30% calc(70% - var(--gap));
+  column-gap: var(--gap);
 }
 </style>
