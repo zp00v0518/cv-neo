@@ -3,16 +3,19 @@
   <hr />
   <main>
     <SidebarCv></SidebarCv>
+    <ExperienceCv></ExperienceCv>
   </main>
 </template>
 
 <script>
 import HeaderCv from './components/organism/HeaderCv'
 import SidebarCv from './components/organism/SidebarCv'
+import ExperienceCv from './components/organism//ExperienceCv'
+
 
 export default {
   name: 'App',
-  components: {HeaderCv, SidebarCv}
+  components: {HeaderCv, SidebarCv, ExperienceCv}
 }
 </script>
 
@@ -27,5 +30,11 @@ export default {
   opacity: 0.5;
   height: 0px;
   margin-block-end: var(--padding-double);
+}
+main {
+  width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: calc(var(--padding-double) * 2);
 }
 </style>

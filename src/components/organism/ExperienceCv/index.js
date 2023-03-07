@@ -1,3 +1,3 @@
-import ExperienceCv from './ExperienceCv'
+import ExperienceCv from './ExperienceCv.vue'
 
 export default ExperienceCv
