@@ -36,6 +36,7 @@ export default {
 .skills-list__title {
   color: inherit;
   text-transform: uppercase;
+  color: #005696;
 }
 .skills-list .skill-cv {
   margin-block-end: var(--padding-double);
