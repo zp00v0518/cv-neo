@@ -3,7 +3,7 @@
     --txt-primary-color-light: #4F4F4F;
     --txt-secondary-color-light: #828282;
 
-    --bg: var(--bg--light);
+    --bg-primary: var(--bg--light);
     --txt-primary-color: var(--txt-primary-color-light);
     --txt-secondary-color: var(--txt-secondary-color-light);
 
@@ -17,9 +17,11 @@
     font-size: 14px;
     color: var(--txt-primary-color)
  }
+
 body {
+    margin-block: 0;
+    background: var(--bg-primary);
     font-family: 'Roboto Flex', sans-serif;
-    background: var(--bg);
     font-size: 14px;
     line-height: 19px;
 }

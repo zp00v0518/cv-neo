@@ -13,11 +13,11 @@
         :title="badge.title"
       ></BadgeBtn>
     </div>
-    <div class="card__item">
+    <p class="card__item card__item--descr">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tenetur
       voluptates hic maiores mollitia animi incidunt ducimus saepe doloribus
       quia, molestiae nisi culpa! Nam iusto dolores illo omnis, veritatis illum!
-    </div>
+    </p>
   </section>
 </template>
 
@@ -57,10 +57,17 @@ export default {
 .card {
   display: grid;
   grid-template-columns: 85px minmax(25%, 35%) minmax(35%, 60%);
-  /* grid-template-columns: 1fr 1fr 2fr; */
   column-gap: var(--padding-double);
-  padding: var(--padding) var(--padding-double);
+  padding: var(--padding-double);
   color: var(--txt-primary-color-light);
+  background: var(--bg-primary);
+  box-shadow: inset -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7),
+    inset 9.15368px 9.15368px 18.3074px rgba(189, 200, 223, 0.7);
+  border-radius: 25px;
+}
+
+.card .avatar-cv {
+  width: 85px;
 }
 .card__item:first-child {
   display: flex;
@@ -79,5 +86,12 @@ export default {
 .card__item--name,
 .card__item--period {
   font-weight: 500;
+}
+
+.card__item--descr {
+  line-height: 1.4rem;
+  margin-block: 0;
+  display: flex;
+  align-items: center;
 }
 </style>
