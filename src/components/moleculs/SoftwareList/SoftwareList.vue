@@ -29,7 +29,7 @@ export default {
         {name: 'Trello', lvl: 4},
         {name: 'Figma', lvl: 4},
         {name: 'Slack', lvl: 4},
-        {name: 'GitLab', lvl: 4},
+        {name: 'GitLab', lvl: 4}
       ]
     }
   }
@@ -38,9 +38,15 @@ export default {
 
 <style>
 .software-list__title {
-  color: inherit;
   text-transform: uppercase;
-  color: #005696;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #e69e00f7 0%, #f9d423 100%);
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .software-list .skill-cv {
   margin-block-end: var(--padding-double);

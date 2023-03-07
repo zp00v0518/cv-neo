@@ -58,7 +58,13 @@ export default {
 .header-cv__body--position {
   margin-block-start: var(--padding-double);
   margin-block-end: var(--padding-double);
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
   font-size: 2.5rem;
+  background: linear-gradient(90deg, #11a8fd 0.54%, #005696 145.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header-cv__body__descr {
