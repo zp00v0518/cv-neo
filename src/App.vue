@@ -21,7 +21,7 @@ export default {
 
 <style>
 #app {
-  max-width: 1000px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 #app hr {

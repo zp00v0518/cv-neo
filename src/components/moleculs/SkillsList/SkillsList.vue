@@ -17,7 +17,12 @@ export default {
   components: {SkillCvVue},
   data() {
     return {
-      list: [{name: 'Vue', lvl: 5}]
+      list: [
+        {name: 'Vue', lvl: 5},
+        {name: 'Javascript', lvl: 5},
+        {name: 'NodeJs', lvl: 5},
+        {name: 'HTML', lvl: 5},
+      ]
     }
   }
 }
