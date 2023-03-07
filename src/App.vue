@@ -40,7 +40,6 @@ export default {
 }
 main {
   --gap: calc(var(--padding-double) * 2);
-  width: 100%;
   display: grid;
   grid-template-columns: 30% calc(70% - var(--gap) - var(--padding));
   column-gap: var(--gap);

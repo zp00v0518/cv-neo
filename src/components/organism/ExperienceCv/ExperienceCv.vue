@@ -76,7 +76,7 @@ export default {
             href: 'http://lords.dobuy.com.ua/',
             title: 'lords.dobuy.com.ua'
           }
-        },
+        }
       ]
     }
   }
@@ -84,9 +84,15 @@ export default {
 </script>
 
 <style>
-.experience-cv  {
+.experience-cv {
   display: grid;
   grid-template-rows: repeat(auto-fill, 250px);
   row-gap: calc(var(--padding-double) + var(--padding-step));
+}
+@media (max-width: 1020px) {
+  .experience-cv {
+    grid-template-rows: unset;
+    grid-auto-rows: max-content;
+  }
 }
 </style>

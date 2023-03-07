@@ -56,7 +56,7 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  width: 32px;
+  width: 24px;
   aspect-ratio: 1;
   background: linear-gradient(153.43deg, #d9dae3 17.71%, #f4f5f8 83.33%);
   box-shadow: -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7),

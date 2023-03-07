@@ -17,6 +17,7 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tenetur
       voluptates hic maiores mollitia animi incidunt ducimus saepe doloribus
       quia, molestiae nisi culpa! Nam iusto dolores illo omnis, veritatis illum!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quibusdam itaque assumenda placeat rerum eaque autem nemo doloribus, maxime porro laudantium corporis aspernatur veniam nostrum quos blanditiis harum debitis quas?
     </p>
   </section>
 </template>
@@ -93,5 +94,18 @@ export default {
   margin-block: 0;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1020px) {
+  .card {
+    grid-template-columns: 85px minmax(300px, max-content);
+  }
+  .card__item--descr {
+    margin-block-start: var(--padding);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
 </style>
