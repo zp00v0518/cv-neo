@@ -2,16 +2,18 @@
   <div class="sidebar">
     <AboutCv></AboutCv>
     <LanguageList></LanguageList>
+    <SkillsList></SkillsList>
   </div>
 </template>
 
 <script>
 import AboutCv from '../../moleculs/AboutCv'
 import LanguageList from '../../moleculs/LanguageList'
+import SkillsList from '../../moleculs/SkillsList'
 
 export default {
   name: 'SidebarCv',
-  components: {AboutCv, LanguageList}
+  components: {AboutCv, LanguageList, SkillsList}
 }
 </script>
 
