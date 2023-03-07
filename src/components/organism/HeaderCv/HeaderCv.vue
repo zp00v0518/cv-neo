@@ -56,12 +56,13 @@ export default {
 }
 
 .header-cv__body--position {
-  margin-block-start: var(--padding-double);
-  margin-block-end: var(--padding-double);
-  height: 2.5rem;
+  --txt-size: 2.5rem;
   display: flex;
   align-items: center;
-  font-size: 2.5rem;
+  margin-block-start: var(--padding-double);
+  margin-block-end: var(--padding-double);
+  height: var(--txt-size);
+  font-size: var(--txt-size);
   background: linear-gradient(90deg, #11a8fd 0.54%, #005696 145.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,5 +71,23 @@ export default {
 .header-cv__body__descr {
   line-height: 150%;
   margin-block-end: var(--padding-double);
+}
+
+@media (max-width: 700px) {
+  .header-cv__body--position {
+    --txt-size: 1.6rem
+  }
+}
+@media (max-width: 550px) {
+  .header-cv__body--position {
+    height: calc(var(--txt-size) * 2);
+    line-height: var(--txt-size);
+  }
+}
+
+@media (max-width: 460px) {
+  .header-cv {
+    flex-direction: column;
+  }
 }
 </style>

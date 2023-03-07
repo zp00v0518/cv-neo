@@ -57,7 +57,7 @@ export default {
 <style>
 .card {
   display: grid;
-  grid-template-columns: 85px minmax(25%, 35%) minmax(35%, 60%);
+  grid-template-columns: 130px minmax(25%, 35%) minmax(35%, 60%);
   column-gap: var(--padding-double);
   padding: var(--padding-double);
   color: var(--txt-primary-color-light);
@@ -98,7 +98,7 @@ export default {
 
 @media (max-width: 1020px) {
   .card {
-    grid-template-columns: 85px minmax(300px, max-content);
+    grid-template-columns: 130px minmax(300px, max-content);
   }
   .card__item--descr {
     margin-block-start: var(--padding);
