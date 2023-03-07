@@ -45,4 +45,14 @@ main {
   column-gap: var(--gap);
   padding: 0 var(--padding);
 }
+
+@media (max-width: 1020px) {
+  main {
+    display: block;
+  }
+
+  .sidebar {
+    margin-block-end: calc(var(--padding-double) * 2);
+  }
+}
 </style>

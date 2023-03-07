@@ -40,6 +40,7 @@ export default {
 .contacts {
   display: flex;
   gap: var(--padding);
+  flex-wrap: wrap;
 }
 .contacts .badge-btn__icon {
   color: #2d9cdb;
