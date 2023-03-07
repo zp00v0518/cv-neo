@@ -86,8 +86,7 @@ export default {
 <style>
 .experience-cv  {
   display: grid;
-  grid-template-rows: repeat(auto-fill);
+  grid-template-rows: repeat(auto-fill, 250px);
   row-gap: calc(var(--padding-double) + var(--padding-step));
-  
 }
 </style>

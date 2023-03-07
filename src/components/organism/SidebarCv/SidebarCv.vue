@@ -2,8 +2,8 @@
   <div class="sidebar">
     <AboutCv></AboutCv>
     <LanguageList></LanguageList>
-    <SkillsList></SkillsList>
-    <SoftwareList></SoftwareList>
+      <SkillsList></SkillsList>
+      <SoftwareList></SoftwareList>
   </div>
 </template>
 
@@ -36,4 +36,5 @@ export default {
 .sidebar .skills-list {
   margin-block-end: calc(var(--padding-double) * 4);
 }
+
 </style>

@@ -1,6 +1,8 @@
 <template>
-  <HeaderCv> </HeaderCv>
-  <hr />
+  <div class="header__sticky">
+    <HeaderCv> </HeaderCv>
+    <hr />
+  </div>
   <main>
     <SidebarCv></SidebarCv>
     <ExperienceCv></ExperienceCv>
@@ -30,6 +32,12 @@ export default {
   opacity: 0.5;
   height: 0px;
   margin-block-end: var(--padding-double);
+  overflow: hidden;
+}
+.header__sticky{
+  position: sticky;
+  top: 0px;
+  background: var(--bg-primary);
 }
 main {
   width: 100%;

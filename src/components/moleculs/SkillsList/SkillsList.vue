@@ -22,10 +22,25 @@ export default {
   data() {
     return {
       list: [
+        {name: 'Javascript', lvl: 5},
         {name: 'Vue', lvl: 5},
-        {name: 'Javascript', lvl: 4},
-        {name: 'NodeJs', lvl: 3},
-        {name: 'HTML', lvl: 2}
+        {name: 'Vuex', lvl: 5},
+        {name: 'Pinia', lvl: 4},
+        {name: 'Nuxt', lvl: 4},
+        {name: 'HTML', lvl: 5},
+        {name: 'CSS', lvl: 4},
+        {name: 'SCSS', lvl: 4},
+        {name: 'Less', lvl: 3},
+        {name: 'Canvas', lvl: 3},
+        {name: 'NodeJs', lvl: 4},
+        {name: 'WebSoket', lvl: 4},
+        {name: 'MongoDB', lvl: 3},
+        {name: 'MySQL', lvl: 3},
+        {name: 'Puppeteer', lvl: 3},
+        {name: 'Git', lvl: 3},
+        {name: 'Nginx', lvl: 3},
+        {name: 'Dart', lvl: 2},
+        {name: 'Flutter', lvl: 1},
       ]
     }
   }

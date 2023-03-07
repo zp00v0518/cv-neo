@@ -78,6 +78,7 @@ export default {
   background: linear-gradient(45deg, #11a8fd 24.17%, #005696 74.59%);
 }
 .skill-cv__item__status[type='secondary'] {
-  background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
+  background: linear-gradient(90deg, #e69e00f7 0%, #f9d423 100%);
+  /* background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%); */
 }
 </style>
