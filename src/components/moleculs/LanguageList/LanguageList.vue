@@ -1,6 +1,10 @@
 <template>
-  <section>
-    <LanguageCv v-for="(item, index) in list" :key="index"></LanguageCv>
+  <section class="lang-list">
+    <LanguageCv
+      v-for="(item, index) in list"
+      :key="index"
+      :name="item.name"
+    ></LanguageCv>
   </section>
 </template>
 
@@ -12,10 +16,16 @@ export default {
   components: {LanguageCv},
   data() {
     return {
-      list: [{}]
+      list: [{name: 'english'}, {name: 'ukranian'}]
     }
   }
 }
 </script>
 
-<style></style>
+<style>
+.lang-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 115px);
+    column-gap: var(--padding);
+}
+</style>
