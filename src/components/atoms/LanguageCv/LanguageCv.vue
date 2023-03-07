@@ -29,6 +29,7 @@ export default {
   padding: calc(var(--padding-lang) / 2);
   aspect-ratio: 1;
   background: linear-gradient(318.21deg, #11a8fd 14.05%, #0081c9 85.29%);
+  width: 110px;
 }
 .lang--cover {
   border-radius: 100%;

@@ -19,4 +19,13 @@ export default {
 .sidebar .about h3 {
   margin-block-start: 0;
 }
+
+.sidebar .lang-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-double);
+  padding-block-start: calc(var(--padding-double) * 2);
+  padding-block-end: calc(var(--padding-double) * 2);
+}
 </style>

@@ -21,11 +21,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.lang-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 115px);
-    column-gap: var(--padding);
-}
-</style>
