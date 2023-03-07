@@ -89,7 +89,7 @@ export default {
   grid-template-rows: repeat(auto-fill, 250px);
   row-gap: calc(var(--padding-double) + var(--padding-step));
 }
-@media (max-width: 1020px) {
+@media (max-width: 1220px) {
   .experience-cv {
     grid-template-rows: unset;
     grid-auto-rows: max-content;

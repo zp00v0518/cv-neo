@@ -96,7 +96,7 @@ export default {
   align-items: center;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1220px) {
   .card {
     grid-template-columns: 130px minmax(300px, max-content);
   }
