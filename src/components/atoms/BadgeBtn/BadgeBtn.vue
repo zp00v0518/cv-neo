@@ -1,7 +1,7 @@
 <template>
-  <a :href="href" :title="title" class="badge-btn">
+  <a :href="href" :title="title" class="badge-btn" target="_blank">
     <div class="badge-btn--wrap">
-      <div class="badge-btn__icon">
+      <div class="badge-btn__icon" v-if="$slots.icon">
         <slot name="icon"></slot>
       </div>
       <span>{{ title }}</span>
@@ -14,7 +14,7 @@ import {ref, toRefs} from 'vue'
 
 export default {
   props: {
-    title: {type: String, default: 'asdfasdfasdfdas'},
+    title: {type: String, default: ''},
     href: {type: String, default: '#'}
   },
 
@@ -33,7 +33,8 @@ export default {
 
 <style>
 .badge-btn {
-  display: block;
+  display: inline-block;
+  width: fit-content;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -47,7 +48,8 @@ export default {
 .badge-btn--wrap {
   display: flex;
   column-gap: var(--padding);
-  width: max-content;
+  /* width: max-content; */
+  width: 100%;
   padding: var(--padding) var(--padding-double);
   background-color: rgba(233, 234, 240, 0.5);
   border-radius: var(--border-radius);

@@ -26,5 +26,6 @@ export default {
   border-color: white;
   opacity: 0.5;
   height: 0px;
+  margin-block-end: var(--padding-double);
 }
 </style>

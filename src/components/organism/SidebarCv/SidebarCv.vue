@@ -20,6 +20,10 @@ export default {
 .sidebar {
   width: 100%;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
+  column-gap: calc(var(--padding-double) * 2);
+}
+.sidebar .about h3 {
+  margin-block-start: 0;
 }
 </style>
