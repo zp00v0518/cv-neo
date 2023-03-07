@@ -33,6 +33,7 @@ export default {
 }
 .about__title {
   color: inherit;
+  text-transform: uppercase;
 }
 .about--wrap {
   display: block;

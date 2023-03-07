@@ -3,7 +3,10 @@
     <span class="skill-cv__name">{{ name }}</span>
     <div class="skill-cv--wrap">
       <div v-for="index in length" :key="index" class="skill-cv__item">
-        <div class="skill-cv__item__status" :status="status"></div>
+        <div
+          class="skill-cv__item__status"
+          :type="index <= lvl ? type : ''"
+        ></div>
       </div>
     </div>
   </section>
@@ -16,7 +19,7 @@ export default {
     name: {type: String, default: ''},
     lvl: {type: Number, default: 0},
     length: {type: Number, default: 5},
-    status: {
+    type: {
       type: String,
       default: '',
       validator: v => {
@@ -71,10 +74,10 @@ export default {
   border-radius: 100%;
 }
 
-.skill-cv__item__status[status='primary'] {
+.skill-cv__item__status[type='primary'] {
   background: linear-gradient(45deg, #11a8fd 24.17%, #005696 74.59%);
 }
-.skill-cv__item__status[status='secondary'] {
+.skill-cv__item__status[type='secondary'] {
   background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
 }
 </style>
