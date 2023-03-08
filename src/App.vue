@@ -1,5 +1,10 @@
 <template>
   <div class="header__sticky">
+    <div class="header__sticky__switch-theme">
+      <span>Light</span>
+      <SwitchCv ></SwitchCv>
+      <span>Dark</span>
+    </div>
     <HeaderCv> </HeaderCv>
     <hr />
   </div>
@@ -13,10 +18,11 @@
 import HeaderCv from './components/organism/HeaderCv'
 import SidebarCv from './components/organism/SidebarCv'
 import ExperienceCv from './components/organism//ExperienceCv'
+import SwitchCv from './components/atoms/SwitchCv'
 
 export default {
   name: 'App',
-  components: {HeaderCv, SidebarCv, ExperienceCv}
+  components: {HeaderCv, SidebarCv, ExperienceCv, SwitchCv}
 }
 </script>
 
@@ -37,6 +43,19 @@ export default {
   position: sticky;
   top: 0px;
   background: var(--bg-primary);
+}
+
+.header__sticky__switch-theme {
+  position: absolute;
+  right: var(--padding-double);
+  top: var(--padding-double);
+  display: flex;
+  align-items: center;
+  color: var(--txt-secondary-color);
+}
+.header__sticky__switch-theme .switch {
+  margin-right: var(--padding);
+  margin-left: var(--padding);
 }
 main {
   --gap: calc(var(--padding-double) * 2);

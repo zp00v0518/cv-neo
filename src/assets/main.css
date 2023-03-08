@@ -12,10 +12,6 @@
     --padding-double: calc(var(--padding) * 2);
 
     --border-radius: 10px;
-
-    --tablet: 1020px;
-
-
 }
 
 html {
