@@ -23,8 +23,8 @@ export default {
     aspect-ratio: 1;
     padding: var(--padding);
     border-radius: 100%;
-    background: linear-gradient(153.43deg, #D9DAE3 17.71%, #F4F5F8 83.33%);
-    box-shadow: var(--shadow-base-part1), var(--shadow-base-part2);
+    background: var(--bg-linear);
+    box-shadow: var(--shadow-base-part1), var(--shadow-base-part2), var(--shadow-base-part3);
     overflow: hidden;
 }
 
@@ -33,6 +33,7 @@ export default {
     height: 100%;
     aspect-ratio: 1;
     border-radius: 100%;
+    /* background: #3C4650; */
 }
 
 @media (max-width: 460px) {

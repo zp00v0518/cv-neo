@@ -39,8 +39,9 @@ export default {
   padding: var(--padding-step) var(--padding-double);
   border-radius: 10px;
   background: var(--bg-primary);
-  box-shadow: -5.49221px -5.49221px 10.9844px rgba(255, 255, 255, 0.7),
-    5.49221px 5.49221px 10.9844px rgba(189, 200, 223, 0.7);
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2), var(--shadow-base-part3);
+  /* box-shadow: -5.49221px -5.49221px 10.9844px rgba(255, 255, 255, 0.7),
+    5.49221px 5.49221px 10.9844px rgba(189, 200, 223, 0.7); */
 }
 .skill-cv__name {
   display: flex;
@@ -58,8 +59,8 @@ export default {
   border-radius: 100%;
   width: 24px;
   aspect-ratio: 1;
-  background: linear-gradient(153.43deg, #d9dae3 17.71%, #f4f5f8 83.33%);
-  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2);
+  background: var(--bg-linear);
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2), var(--shadow-base-part3);
 }
 
 .skill-cv--wrap {

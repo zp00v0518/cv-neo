@@ -43,7 +43,7 @@ export default {
   padding: var(--padding-lang);
   aspect-ratio: 1;
   background: var(--bg-primary);
-  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2);
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2), var(--shadow-base-part3);
 }
 .lang__name {
   display: flex;
