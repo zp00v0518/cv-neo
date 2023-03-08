@@ -1,49 +1,69 @@
 :root {
-    --bg-light: #E9EAF0;
-    --txt-primary-color-light: #4F4F4F;
-    --txt-secondary-color-light: #828282;
+  color-scheme: light;
+  --bg-light: #E9EAF0;
+  --txt-primary-color-light: #4F4F4F;
+  --txt-secondary-color-light: #828282;
+  
+  
+  color-scheme: dark;
+  --bg-dark: linear-gradient(90deg, #2A2D32 5.15%, #131313 89.49%);
+  --txt-primary-color-dark: #FFFFFF;
+  --txt-secondary-color-dark: #FFFFFF;
 
-    --bg-primary: var(--bg-light);
-    --txt-primary-color: var(--txt-primary-color-light);
-    --txt-secondary-color: var(--txt-secondary-color-light);
 
-    --padding-step: 5px;
-    --padding: 10px;
-    --padding-double: calc(var(--padding) * 2);
 
-    --border-radius: 10px;
+
+  --bg-primary: var(--bg-light);
+  --txt-primary-color: var(--txt-primary-color-light);
+  --txt-secondary-color: var(--txt-secondary-color-light);
+
+  --padding-step: 5px;
+  --padding: 10px;
+  --padding-double: calc(var(--padding) * 2);
+
+  --border-radius: 10px;
 }
 
-html {
-    font-size: 14px;
-    color: var(--txt-primary-color);
- }
 
- html::-webkit-scrollbar{
-    width: 14px;
-    height: 18px;
-  }
-  html::-webkit-scrollbar-thumb {
-    height: 6px;
-    border: 4px solid rgba(0, 0, 0, 0);
-    background-clip: padding-box;
-    -webkit-border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
-  }
-  html::-webkit-scrollbar-button {
-    width: 0;
-    height: 0;
-    display: none;
-  }
-  html::-webkit-scrollbar-corner {
-    background-color: transparent
-  }
+html {
+  font-size: 14px;
+  color: var(--txt-primary-color);
+}
+
+html::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+
+html::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+html::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+html::-webkit-scrollbar-corner {
+  background-color: transparent
+}
 
 body {
-    margin-block: 0;
-    background: var(--bg-primary);
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 14px;
-    line-height: 19px;
+  margin-block: 0;
+  background: var(--bg-primary);
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+html[color-scheme="dark"]{
+  --bg-primary: var(--bg-dark);
+  --txt-primary-color: var(--txt-primary-color-dark);
+  --txt-secondary-color: var(--txt-secondary-color-dark);
 }
