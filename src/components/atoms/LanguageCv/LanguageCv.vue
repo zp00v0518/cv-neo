@@ -43,8 +43,7 @@ export default {
   padding: var(--padding-lang);
   aspect-ratio: 1;
   background: var(--bg-primary);
-  box-shadow: -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7),
-    9.15368px 9.15368px 18.3074px rgba(189, 200, 223, 0.7);
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2);
 }
 .lang__name {
   display: flex;

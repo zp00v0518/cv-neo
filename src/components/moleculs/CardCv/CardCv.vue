@@ -17,7 +17,10 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tenetur
       voluptates hic maiores mollitia animi incidunt ducimus saepe doloribus
       quia, molestiae nisi culpa! Nam iusto dolores illo omnis, veritatis illum!
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quibusdam itaque assumenda placeat rerum eaque autem nemo doloribus, maxime porro laudantium corporis aspernatur veniam nostrum quos blanditiis harum debitis quas?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quibusdam
+      itaque assumenda placeat rerum eaque autem nemo doloribus, maxime porro
+      laudantium corporis aspernatur veniam nostrum quos blanditiis harum
+      debitis quas?
     </p>
   </section>
 </template>
@@ -62,8 +65,7 @@ export default {
   padding: var(--padding-double);
   color: var(--txt-primary-color-light);
   background: var(--bg-primary);
-  box-shadow: inset -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7),
-    inset 9.15368px 9.15368px 18.3074px rgba(189, 200, 223, 0.7);
+  box-shadow: inset var(--shadow-base-part1), inset var(--shadow-base-part2), inset var(--shadow-base-part3);
   border-radius: 25px;
 }
 

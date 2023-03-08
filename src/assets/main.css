@@ -3,24 +3,35 @@
   --bg-light: #E9EAF0;
   --txt-primary-color-light: #4F4F4F;
   --txt-secondary-color-light: #828282;
+  --shadow-base-part1--light: -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7);
+  --shadow-base-part2--light: 9.15368px 9.15368px 18.3074px rgba(189, 200, 223, 0.7);
+  --shadow-base-part3--light: 0px 0px 0px transparent; /** stub*/
   
   
   color-scheme: dark;
   --bg-dark: linear-gradient(90deg, #2A2D32 5.15%, #131313 89.49%);
   --txt-primary-color-dark: #FFFFFF;
   --txt-secondary-color-dark: #FFFFFF;
-
-
-
-
+  --shadow-base-part1--dark: -5.40932px -7.43782px 12.171px rgba(255, 255, 255, 0.02);
+  --shadow-base-part2--dark: -4.05699px -4.05699px 8.11398px rgba(255, 255, 255, 0.25);
+  --shadow-base-part3--dark: 4.05699px 4.05699px 8.11398px rgba(0, 0, 0, 0.25);
+  
+  
+  /* main variables */
   --bg-primary: var(--bg-light);
   --txt-primary-color: var(--txt-primary-color-light);
   --txt-secondary-color: var(--txt-secondary-color-light);
 
+  --shadow-base-part1: var(--shadow-base-part1--light);
+  --shadow-base-part2: var(--shadow-base-part2--light);
+  --shadow-base-part3: var(--shadow-base-part3--light);
+
+
+
+
   --padding-step: 5px;
   --padding: 10px;
   --padding-double: calc(var(--padding) * 2);
-
   --border-radius: 10px;
 }
 
@@ -62,8 +73,12 @@ body {
   line-height: 19px;
 }
 
-html[color-scheme="dark"]{
+html[color-scheme="dark"] {
   --bg-primary: var(--bg-dark);
   --txt-primary-color: var(--txt-primary-color-dark);
   --txt-secondary-color: var(--txt-secondary-color-dark);
+
+  --shadow-base-part1: var(--shadow-base-part1--dark);
+  --shadow-base-part2: var(--shadow-base-part2--dark);
+  --shadow-base-part3: var(--shadow-base-part3--dark);
 }

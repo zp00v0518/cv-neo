@@ -59,8 +59,7 @@ export default {
   width: 24px;
   aspect-ratio: 1;
   background: linear-gradient(153.43deg, #d9dae3 17.71%, #f4f5f8 83.33%);
-  box-shadow: -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7),
-    9.15368px 9.15368px 18.3074px rgba(189, 200, 223, 0.7);
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2);
 }
 
 .skill-cv--wrap {
