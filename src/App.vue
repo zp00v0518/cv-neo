@@ -2,7 +2,7 @@
   <div class="header__sticky">
     <div class="header__sticky__switch-theme">
       <span>Light</span>
-      <SwitchCv ></SwitchCv>
+      <SwitchCv @change="setTheme"></SwitchCv>
       <span>Dark</span>
     </div>
     <HeaderCv> </HeaderCv>
@@ -22,7 +22,14 @@ import SwitchCv from './components/atoms/SwitchCv'
 
 export default {
   name: 'App',
-  components: {HeaderCv, SidebarCv, ExperienceCv, SwitchCv}
+  components: {HeaderCv, SidebarCv, ExperienceCv, SwitchCv},
+  methods: {
+    setTheme (event) {
+      const value = event.target.checked
+      const html = document.querySelector('html')
+      html.setAttribute('color-scheme', value ? 'light' : 'dark')
+    }
+  }
 }
 </script>
 
