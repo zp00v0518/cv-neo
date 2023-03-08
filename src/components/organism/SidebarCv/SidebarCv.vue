@@ -2,8 +2,10 @@
   <div class="sidebar">
     <AboutCv></AboutCv>
     <LanguageList></LanguageList>
+    <div class="sidebar__skills">
       <SkillsList></SkillsList>
       <SoftwareList></SoftwareList>
+    </div>
   </div>
 </template>
 
@@ -33,8 +35,17 @@ export default {
   padding-block-end: calc(var(--padding-double) * 2);
 }
 
-.sidebar .skills-list {
-  margin-block-end: calc(var(--padding-double) * 4);
+@media (max-width: 1020px) {
+  .sidebar__skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--padding-double);
+  }
 }
 
+@media (max-width: 660px) {
+  .sidebar__skills {
+    display: block;
+  }
+}
 </style>

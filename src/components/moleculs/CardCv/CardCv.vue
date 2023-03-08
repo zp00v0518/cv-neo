@@ -1,9 +1,9 @@
 <template>
   <section class="card">
-    <a class="card__item" :href="badge.href" target="_blank">
+    <a class="card__item card__item__icon" :href="badge.href" target="_blank">
       <AvatarCv :img-src="icon"></AvatarCv>
     </a>
-    <div class="card__item">
+    <div class="card__item card__item__body">
       <span class="card__item--name">{{ companyName }}</span>
       <span class="card__item--position">{{ position.toUpperCase() }}</span>
       <span class="card__item--period">{{ period }}</span>
@@ -70,18 +70,18 @@ export default {
 .card .avatar-cv {
   width: 85px;
 }
-.card__item:first-child {
+.card__item__icon {
   display: flex;
   align-items: center;
 }
 
-.card__item:nth-child(2) {
+.card__item__body {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
   font-weight: 700;
 }
-.card__item:nth-child(2) > span {
+.card__item__body > span {
   margin-block-end: calc(var(--padding) + var(--padding-step));
 }
 .card__item--name,
@@ -106,6 +106,21 @@ export default {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__item__body {
+    align-self: flex-start;
+    margin-block-end: var(--padding-double);
+  }
+  .card__item__icon {
+    margin-block-end: var(--padding-double);
   }
 }
 </style>
