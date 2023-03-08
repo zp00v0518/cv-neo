@@ -35,11 +35,18 @@ export default {
   padding-block-end: calc(var(--padding-double) * 2);
 }
 
+.sidebar__skills .skills-list {
+  margin-block-end: calc(var(--padding-double) * 2);
+}
+
 @media (max-width: 1020px) {
   .sidebar__skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--padding-double);
+  }
+  .sidebar__skills .skills-list {
+    margin-block-end: 0;
   }
 }
 
