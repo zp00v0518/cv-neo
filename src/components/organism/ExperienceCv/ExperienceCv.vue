@@ -22,6 +22,7 @@ import ubjsIcon from '../../../assets/ubjs.svg'
 import dobuyIcon from '../../../assets/dobuy.svg'
 import jcashIcon from '../../../assets/jcash.svg'
 import lordsIcon from '../../../assets/lords.svg'
+import defaultIcon from '../../../assets/default.svg'
 
 export default {
   name: 'ExperienceCv',
@@ -39,8 +40,7 @@ export default {
             title: 'unitybase.info'
           },
           html: true,
-          description: 
-          `<div>
+          description: `<div>
             <b>The main purpose of UnityBase is to provide a set of modules for rapid development of RMS and EDRMS class software. </b>
             <br>
             During I have worked on the project: 
@@ -49,7 +49,7 @@ export default {
               <li>rewrite old components from ExtJs on Vue</li>
               <li>was refactoring and was fixing bugs in legacy code</li>
             </ul>
-          </div>`,
+          </div>`
         },
         {
           icon: toriIcon,
@@ -61,9 +61,8 @@ export default {
             title: 'toriapps.com'
           },
           html: true,
-          description: 
-          `<div>
-            <b>Tori is a flexible HRIS management system with a corporate portal and recruitment features inside. It’s a central hub for the strategic company processes: recruiting, employee management, engagement, and retention.</b> 
+          description: `<div>
+            <b>Tori is a flexible HRIS management system with a corporate portal and recruitment features inside</b> 
             <br>
             During I have worked on the project: 
             <ul>
@@ -81,24 +80,26 @@ export default {
           </div>`
         },
         {
-          icon: jcashIcon,
-          companyName: 'Jcash',
-          position: 'Javascript Developer (Vue)',
-          period: '08.2018  - 10.2018',
+          icon: lordsIcon,
+          companyName: 'Lords MMO RTS',
+          position: 'Full Stack Developer',
+          period: '06.2017  - 08.2018',
           badge: {
-            href: 'https://jcash.co/uk/',
-            title: 'jcash.co'
+            href: 'http://lords.dobuy.com.ua/',
+            title: 'lords.dobuy.com.ua'
           },
           html: true,
-          description: 
-          `<div>
-            <b>Jcash - Convenient and secure digital wallet in Telegram</b>
+          description: `<div>
+            <b>Lords it is MMO RTS game in isometric view. Personal project.</b>
             <br>
             During I have worked on the project: 
             <ul>
-              <li>was refactoring  Vue-components</li>
-              <li>was connecting authorization through third-party services: Google, FB, Telegram</li>
-              <li>was developing animation</li>
+              <li>was building the architecture of the client and backend part</li>
+              <li>was developing the architecture of interaction between online players</li>
+              <li>was developing the rules of the game</li>
+              <li>was designing  data base</li>
+              <li>was working on autorization and autefication</li>
+              <li>was working with graphics (Canvas)</li>
             </ul>
           </div>`
         },
@@ -112,8 +113,7 @@ export default {
             title: 'dobuy.com.ua'
           },
           html: true,
-          description: 
-          `<div>
+          description: `<div>
             <b>DoBuy it is online-shop. Personal project. Completely implemented by me.</b>
             <br>
             During I have worked on the project: 
@@ -128,28 +128,45 @@ export default {
             </ul>
           </div>`
         },
+
         {
-          icon: lordsIcon,
-          companyName: 'Lords MMO RTS',
-          position: 'Full Stack Developer',
-          period: '06.2017  - 08.2018',
+          icon: jcashIcon,
+          companyName: 'Jcash',
+          position: 'Javascript Developer (Vue)',
+          period: '08.2018  - 10.2018',
           badge: {
-            href: 'http://lords.dobuy.com.ua/',
-            title: 'lords.dobuy.com.ua'
+            href: 'https://jcash.co/uk/',
+            title: 'jcash.co'
           },
           html: true,
-          description: 
-          `<div>
-            <b>Lords it is MMO RTS game in isometric view</b>
+          description: `<div>
+            <b>Jcash - Convenient and secure digital wallet in Telegram</b>
+            <br>
+            During I have worked on the project: 
+            <ul>
+              <li>was refactoring  Vue-components</li>
+              <li>was connecting authorization through third-party services: Google, FB, Telegram</li>
+              <li>was developing animation</li>
+            </ul>
+          </div>`
+        },
+        {
+          icon: defaultIcon,
+          companyName: 'BetParser',
+          position: 'Full Stack Developer',
+          period: '08.2021  - 02.2022',
+          html: true,
+          description: `<div>
+            <b>Parser of bookmaker's sites, for searching surebets.  Personal project. Not in the public domain</b>
+            <br>
+            The application allows you to find surebets in real time
             <br>
             During I have worked on the project: 
             <ul>
               <li>was building the architecture of the client and backend part</li>
-              <li>was developing the architecture of interaction between online players</li>
-              <li>was developing the rules of the game</li>
               <li>was designing  data base</li>
-              <li>was working on autorization and autefication</li>
-              <li>was working with graphics (Canvas)</li>
+              <li>created parsing sysmem</li>
+              <li>created system of matching commands names</li>
             </ul>
           </div>`
         }

@@ -1,13 +1,22 @@
 <template>
   <section class="card">
-    <a class="card__item card__item__icon" :href="badge.href" target="_blank">
+    <a
+      v-if="badge"
+      class="card__item card__item__icon"
+      :href="badge.href"
+      target="_blank"
+    >
       <AvatarCv :img-src="icon"></AvatarCv>
     </a>
+    <div v-else class="card__item card__item__icon">
+      <AvatarCv :img-src="icon"></AvatarCv>
+    </div>
     <div class="card__item card__item__body">
       <span class="card__item--name">{{ companyName }}</span>
       <span class="card__item--position">{{ position.toUpperCase() }}</span>
       <span class="card__item--period">{{ period }}</span>
       <BadgeBtn
+        v-if="badge"
         class="card__item--period"
         :href="badge.href"
         :title="badge.title"
@@ -58,7 +67,7 @@ export default {
     },
     badge: {
       type: Object,
-      default: () => ({href: '', title: ''})
+      default: undefined
     }
   }
 }

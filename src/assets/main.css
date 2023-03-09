@@ -80,10 +80,11 @@ html::-webkit-scrollbar-corner {
 
 body {
   margin-block: 0;
-  background: var(--bg-primary);
+  margin-block-end: var(--padding-double);
   font-family: 'Roboto Flex', sans-serif;
   font-size: 14px;
   line-height: 19px;
+  background: var(--bg-primary);
 }
 
 html[color-scheme="dark"] {
