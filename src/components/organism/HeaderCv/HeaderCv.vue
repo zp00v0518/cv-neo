@@ -6,7 +6,6 @@
       <h1 class="header-cv__body--position">Javascript Developer (Vue)</h1>
       <div class="header-cv__body__descr">
         <span class="header-cv__body__descr--item">ukranian</span>
-        <span class="header-cv__body__descr--item">40 years old</span>
         <span class="header-cv__body__descr--item">Kiev, Ukraine</span>
       </div>
       <ContactsCv />
@@ -15,7 +14,7 @@
 </template>
 
 <script>
-import avatarSrc from '../../../assets/face.webp'
+import avatarSrc from '../../../assets/7.png'
 
 import AvatarCv from '../../atoms/AvatarCv'
 import ContactsCv from '../../moleculs/ContactsCv'
@@ -38,6 +37,7 @@ export default {
 }
 
 .header-cv__avatar {
+  max-width: 150px;
   margin-right: calc(var(--padding-double) * 2);
 }
 .header-cv__body {
