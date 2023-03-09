@@ -46,6 +46,10 @@ export default {
   margin-block-end: var(--padding-double);
   overflow: hidden;
 }
+html[color-scheme='dark'] #app hr {
+  border-color: #696969;
+}
+
 .header__sticky {
   position: sticky;
   top: 0px;
