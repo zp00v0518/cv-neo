@@ -70,6 +70,7 @@ export default {
   grid-template-columns: 130px minmax(25%, 35%) minmax(35%, 60%);
   column-gap: var(--padding-double);
   padding: var(--padding-double);
+  font-size: 1.2rem;
   color: var(--txt-primary-color);
   background: var(--bg-primary);
   box-shadow: inset var(--shadow-base-part1), inset var(--shadow-base-part2),
@@ -89,7 +90,6 @@ export default {
 .card__item__body {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -103,7 +103,7 @@ export default {
 }
 
 .card__item--descr {
-  line-height: 1.4rem;
+  line-height: 2rem;
   margin-block: 0;
   display: flex;
   align-items: center;
