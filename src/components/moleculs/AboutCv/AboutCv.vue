@@ -4,17 +4,24 @@
     <div class="about--wrap">
       <article class="about__content">
         <p class="about__content__item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
-          ratione libero nobis dignissimos molestias minus eveniet a
-          exercitationem doloribus iusto dolores tempore, mollitia quidem sequi
-          amet accusamus nostrum dolorum.
+          I implement designers' fantasies, taking into account the wishes of
+          the backend
         </p>
+
         <p class="about__content__item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
-          ratione libero nobis dignissimos molestias minus eveniet a
-          exercitationem doloribus iusto dolores tempore, mollitia quidem sequi
-          amet accusamus nostrum dolorum.
+          At my last job, I developed a component library in Vue for a document
+          management platform.
         </p>
+        <div class="about__content__item">
+          Even earlier, when developing an ERP system:
+        <ul>
+          <li>developed the architecture of the client part</li>
+          <li>implemented dynamic constructionand display of pages</li>
+          <li>definitely - implemented Figma designs in HTML, CSS and JS </li>
+          <li>worked with graphics (Canvas)</li>
+          <li>and many other things that were needed to create an ERP system</li>
+        </ul>
+        </div>
       </article>
     </div>
   </section>
@@ -31,10 +38,12 @@ export default {
   color: var(--txt-secondary-color);
   --border-radius: 25px;
 }
+
 .about__title {
   color: inherit;
   text-transform: uppercase;
 }
+
 .about--wrap {
   display: block;
   color: inherit;
@@ -43,10 +52,16 @@ export default {
   border-radius: var(--border-radius);
   background-blend-mode: overlay;
 }
+
 .about__content {
   column-gap: var(--padding);
   padding: var(--padding) var(--padding-double);
   background: var(--bg-badge-btn--wrap);
   border-radius: var(--border-radius);
+}
+
+.about__content__item ul  {
+padding-left: var(--padding-double);
+
 }
 </style>

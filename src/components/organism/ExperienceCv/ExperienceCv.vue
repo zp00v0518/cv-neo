@@ -8,6 +8,8 @@
       :position="card.position"
       :period="card.period"
       :badge="card.badge"
+      :description="card.description"
+      :html="card.html"
     ></CardCv>
   </div>
 </template>
@@ -33,9 +35,18 @@ export default {
           position: 'Javascript Developer (Vue)',
           period: '08.2021 - 01.2023',
           badge: {
-            href: 'https://unitybase.info/api/index.html',
+            href: 'https://unitybase.info/api/adminui-vue/index.html',
             title: 'unitybase.info'
-          }
+          },
+          description: `<div>The main purpose of UnityBase is to provide a set of modules for rapid development of RMS and EDRMS class software. <br>
+          During I have worked on the project: 
+          <ul>
+            <li> was creating new components on Vue</li> 
+            <li>rewrite old components from ExtJs on Vue</li>
+            <li>was refactoring and was fixing bugs in legacy code</li>
+          </ul>
+          </div>`,
+          html: true
         },
         {
           icon: toriIcon,

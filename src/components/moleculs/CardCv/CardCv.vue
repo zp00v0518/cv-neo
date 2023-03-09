@@ -13,14 +13,13 @@
         :title="badge.title"
       ></BadgeBtn>
     </div>
-    <p class="card__item card__item--descr">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tenetur
-      voluptates hic maiores mollitia animi incidunt ducimus saepe doloribus
-      quia, molestiae nisi culpa! Nam iusto dolores illo omnis, veritatis illum!
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quibusdam
-      itaque assumenda placeat rerum eaque autem nemo doloribus, maxime porro
-      laudantium corporis aspernatur veniam nostrum quos blanditiis harum
-      debitis quas?
+    <p
+      class="card__item card__item--descr"
+      v-if="html"
+      v-html="description"
+    ></p>
+    <p class="card__item card__item--descr" v-else>
+      {{ description }}
     </p>
   </section>
 </template>
@@ -49,6 +48,14 @@ export default {
       type: String,
       default: ''
     },
+    description: {
+      type: String,
+      default: ''
+    },
+    html: {
+      type: Boolean,
+      default: false
+    },
     badge: {
       type: Object,
       default: () => ({href: '', title: ''})
@@ -65,13 +72,15 @@ export default {
   padding: var(--padding-double);
   color: var(--txt-primary-color);
   background: var(--bg-primary);
-  box-shadow: inset var(--shadow-base-part1), inset var(--shadow-base-part2), inset var(--shadow-base-part3);
+  box-shadow: inset var(--shadow-base-part1), inset var(--shadow-base-part2),
+    inset var(--shadow-base-part3);
   border-radius: 25px;
 }
 
 .card .avatar-cv {
   width: 85px;
 }
+
 .card__item__icon {
   display: flex;
   align-items: center;
@@ -83,9 +92,11 @@ export default {
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 .card__item__body > span {
   margin-block-end: calc(var(--padding) + var(--padding-step));
 }
+
 .card__item--name,
 .card__item--period {
   font-weight: 500;
@@ -102,6 +113,7 @@ export default {
   .card {
     grid-template-columns: 130px minmax(300px, max-content);
   }
+
   .card__item--descr {
     margin-block-start: var(--padding);
     grid-row-start: 2;
@@ -117,10 +129,12 @@ export default {
     flex-direction: column;
     align-items: center;
   }
+
   .card__item__body {
     align-self: flex-start;
     margin-block-end: var(--padding-double);
   }
+
   .card__item__icon {
     margin-block-end: var(--padding-double);
   }
