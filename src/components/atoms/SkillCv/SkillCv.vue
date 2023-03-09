@@ -62,8 +62,10 @@ export default {
     }
   },
   mounted() {
-    this.setValues()
-    window.addEventListener('resize', this.start)
+    this.$nextTick(()=>{
+      this.setValues()
+      window.addEventListener('resize', this.start)
+    })
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.start)
