@@ -38,20 +38,16 @@ export default {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  background: green;
   padding-top: 2px;
-  background: white;
+  background: var(--bg-badge-btn);
   border-radius: var(--border-radius);
-  background-blend-mode: overlay;
 }
 
 .badge-btn--wrap {
   display: flex;
   column-gap: var(--padding);
-  /* width: max-content; */
-  width: 100%;
   padding: var(--padding) var(--padding-double);
-  background-color: rgba(233, 234, 240, 0.5);
+  background: var(--bg-badge-btn--wrap);
   border-radius: var(--border-radius);
 }
 

@@ -2,8 +2,12 @@
   color-scheme: light;
   --bg-light: #E9EAF0;
   --bg-linear-light: linear-gradient(153.43deg, #D9DAE3 17.71%, #F4F5F8 83.33%);
+  --bg-badge-btn--light: linear-gradient(rgb(254,255,255), rgb(243,243,247));
+  --bg-badge-btn--wrap--light: linear-gradient(153.43deg, rgb(243,243,247) 17.71%, rgb(243,243,247) 83.33%);
+
   --txt-primary-color-light: #4F4F4F;
   --txt-secondary-color-light: #828282;
+
   --shadow-base-part1--light: -9.15368px -9.15368px 18.3074px rgba(255, 255, 255, 0.7);
   --shadow-base-part2--light: 9.15368px 9.15368px 18.3074px rgba(189, 200, 223, 0.7);
   --shadow-base-part3--light: 0px 0px 0px transparent;
@@ -13,8 +17,12 @@
   color-scheme: dark;
   --bg-dark: linear-gradient(90deg, #2A2D32 5.15%, #131313 89.49%);
   --bg-linear-dark:  linear-gradient(166.29deg, rgba(60, 67, 72, 0.46) 5.88%, rgba(28, 30, 33, 0.46) 75.73%);
+  --bg-badge-btn--dark: linear-gradient(rgb(114, 116, 125), rgb(49, 42, 57));
+  --bg-badge-btn--wrap--dark: linear-gradient(153.43deg, rgb(51, 54, 58) 17.71%, rgb(46, 49, 53) 83.33%);
+
   --txt-primary-color-dark: #FFFFFF;
   --txt-secondary-color-dark: #FFFFFF;
+
   --shadow-base-part1--dark: -5.40932px -7.43782px 12.171px rgba(255, 255, 255, 0.02);
   --shadow-base-part2--dark: -4.05699px -4.05699px 8.11398px rgba(255, 255, 255, 0.25);
   --shadow-base-part3--dark: 4.05699px 4.05699px 8.11398px rgba(0, 0, 0, 0.25);
@@ -23,6 +31,8 @@
   /* main variables */
   --bg-primary: var(--bg-light);
   --bg-linear: var(--bg-linear-light);
+  --bg-badge-btn: var(--bg-badge-btn--light);
+  --bg-badge-btn--wrap: var(--bg-badge-btn--wrap--light);
   
   --txt-primary-color: var(--txt-primary-color-light);
   --txt-secondary-color: var(--txt-secondary-color-light);
@@ -30,13 +40,11 @@
   --shadow-base-part1: var(--shadow-base-part1--light);
   --shadow-base-part2: var(--shadow-base-part2--light);
   --shadow-base-part3: var(--shadow-base-part3--light);
-  
-  
-  
-  
+
   --padding-step: 5px;
   --padding: 10px;
   --padding-double: calc(var(--padding) * 2);
+  
   --border-radius: 10px;
 }
 
@@ -81,7 +89,9 @@ body {
 html[color-scheme="dark"] {
   --bg-primary: var(--bg-dark);
   --bg-linear: var(--bg-linear-dark);
-  
+  --bg-badge-btn: var(--bg-badge-btn--dark);
+  --bg-badge-btn--wrap: var(--bg-badge-btn--wrap--dark);
+
   --txt-primary-color: var(--txt-primary-color-dark);
   --txt-secondary-color: var(--txt-secondary-color-dark);
   
