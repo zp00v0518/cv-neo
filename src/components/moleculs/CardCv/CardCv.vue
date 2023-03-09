@@ -63,7 +63,7 @@ export default {
   grid-template-columns: 130px minmax(25%, 35%) minmax(35%, 60%);
   column-gap: var(--padding-double);
   padding: var(--padding-double);
-  color: var(--txt-primary-color-light);
+  color: var(--txt-primary-color);
   background: var(--bg-primary);
   box-shadow: inset var(--shadow-base-part1), inset var(--shadow-base-part2), inset var(--shadow-base-part3);
   border-radius: 25px;

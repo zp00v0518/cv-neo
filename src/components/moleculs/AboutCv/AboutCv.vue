@@ -39,14 +39,14 @@ export default {
   display: block;
   color: inherit;
   padding-top: 3px;
-  background: white;
+  background: var(--bg-badge-btn);
   border-radius: var(--border-radius);
   background-blend-mode: overlay;
 }
 .about__content {
   column-gap: var(--padding);
   padding: var(--padding) var(--padding-double);
-  background-color: rgba(233, 234, 240, 0.5);
+  background: var(--bg-badge-btn--wrap);
   border-radius: var(--border-radius);
 }
 </style>

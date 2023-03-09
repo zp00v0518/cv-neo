@@ -35,12 +35,12 @@ export default {
 .badge-btn {
   display: inline-block;
   width: fit-content;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
   padding-top: 2px;
+  color: var(--txt-secondary-color);
+  text-decoration: none;
   background: var(--bg-badge-btn);
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 .badge-btn--wrap {
