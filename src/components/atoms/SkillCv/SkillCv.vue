@@ -1,11 +1,11 @@
 <template>
-  <section class="skill-cv">
-    <span class="skill-cv__name">{{ name }}</span>
+  <section class="skill-cv" ref="skills">
+    <span class="skill-cv__name" ref="name">{{ name }}</span>
     <div class="skill-cv--wrap">
-      <div v-for="index in length" :key="index" class="skill-cv__item">
+      <div v-for="index in curLength" :key="index" class="skill-cv__item">
         <div
           class="skill-cv__item__status"
-          :type="index <= lvl ? type : ''"
+          :type="index <= curLvl ? type : ''"
         ></div>
       </div>
     </div>
@@ -28,20 +28,58 @@ export default {
     }
   },
   data() {
-    return {}
+    return {
+      curLvl: this.lvl,
+      curLength: this.length,
+      percent: this.lvl / this.length,
+      timeout: null
+    }
+  },
+  methods: {
+    setValues() {
+      const container = this.$refs.skills
+      const containerWidth = +container.clientWidth
+      const name = this.$refs.name
+      const nameWidth = +name.clientWidth
+      const containerStyles = getComputedStyle(container)
+      const nameStyles = getComputedStyle(name)
+      const nameMargin = parseFloat(nameStyles.getPropertyValue('margin-right'))
+      const emtySpase = containerWidth - nameWidth - nameMargin
+
+      const elemWidth = parseFloat(
+        containerStyles.getPropertyValue('--elem-width')
+      )
+      const gap = parseFloat(containerStyles.getPropertyValue('--padding'))
+      const itemWidth = elemWidth + gap
+      this.curLength = Math.floor((emtySpase - gap - gap) / itemWidth)
+      this.curLvl = Math.floor(this.curLength * this.percent)
+    },
+    start() {
+      clearTimeout(this.timeout)
+      this.timeout = setTimeout(() => {
+        this.setValues()
+      }, 30)
+    }
+  },
+  mounted() {
+    this.setValues()
+    window.addEventListener('resize', this.start)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.start)
   }
 }
 </script>
 
 <style>
 .skill-cv {
+  --elem-width: 24px;
   display: flex;
   padding: var(--padding-step) var(--padding-double);
   border-radius: 10px;
   background: var(--bg-primary);
-  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2), var(--shadow-base-part3);
-  /* box-shadow: -5.49221px -5.49221px 10.9844px rgba(255, 255, 255, 0.7),
-    5.49221px 5.49221px 10.9844px rgba(189, 200, 223, 0.7); */
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2),
+    var(--shadow-base-part3);
 }
 .skill-cv__name {
   display: flex;
@@ -57,15 +95,17 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  width: 24px;
+  width: var(--elem-width);
   aspect-ratio: 1;
   background: var(--bg-linear);
-  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2), var(--shadow-base-part3);
+  box-shadow: var(--shadow-base-part1), var(--shadow-base-part2),
+    var(--shadow-base-part3);
 }
 
 .skill-cv--wrap {
   display: flex;
   gap: var(--padding);
+  width: 100%;
 }
 
 .skill-cv__item__status {

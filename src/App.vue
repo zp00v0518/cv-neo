@@ -74,6 +74,7 @@ main {
   grid-template-columns: 30% calc(70% - var(--gap) - var(--padding));
   column-gap: var(--gap);
   padding: 0 var(--padding);
+  padding-right: 0;
 }
 
 @media (max-width: 1020px) {
