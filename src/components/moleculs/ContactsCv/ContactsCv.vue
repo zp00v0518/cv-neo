@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       contactList: [
-        {icon: 'gmail', href: 'gmail.com', title: 'gmail.com'},
+        {icon: 'gmail', href: 'mailto:zp00v0518@gmail.com', title: 'gmail.com'},
         {icon: 'phone', href: 'tel:+380965253550', title: '0965253550'},
         {icon: 'skype', href: 'skype:zp00v0518', title: 'zp00v0518'},
         {
