@@ -27,7 +27,7 @@ export default {
     setTheme (event) {
       const value = event.target.checked
       const html = document.querySelector('html')
-      html.setAttribute('color-scheme', value ? 'light' : 'dark')
+      html.setAttribute('color-scheme', value ? 'dark' : 'light')
     }
   }
 }
