@@ -46,7 +46,7 @@ export default {
             During I have worked on the project: 
             <ul>
               <li> was creating new components on Vue</li> 
-              <li>rewrite old components from ExtJs on Vue</li>
+              <li> &#128579; rewrite old components from ExtJs on Vue</li>
               <li>was refactoring and was fixing bugs in legacy code</li>
             </ul>
           </div>`
@@ -67,10 +67,10 @@ export default {
             During I have worked on the project: 
             <ul>
               <li>was building the architecture of the client part</li>
-              <li>was implementing dynamic constructionand display of pages</li>
+              <li>&#128579; was implementing dynamic constructionand display of pages</li>
               <li>was creating new components on Vue</li>
               <li>definitely - was implementing Figma designs in HTML, CSS and JS </li>
-              <li>was working with graphics (Canvas)</li>
+              <li>&#128525;was working with graphics (Canvas)</li>
               <li>was writing tests for components</li>
               <li>was doing code-review other developers</li>
               <li>was working closely with backend developers, QA and disigners</li>
@@ -90,16 +90,16 @@ export default {
           },
           html: true,
           description: `<div>
-            <b>Lords it is MMO RTS game in isometric view. Personal project.</b>
+            <b>&#128526;Lords it is MMO RTS game in isometric view. Personal project.</b>
             <br>
             During I have worked on the project: 
             <ul>
               <li>was building the architecture of the client and backend part</li>
               <li>was developing the architecture of interaction between online players</li>
-              <li>was developing the rules of the game</li>
+              <li>&#128521;was developing the rules of the game</li>
               <li>was designing  data base</li>
               <li>was working on autorization and autefication</li>
-              <li>was working with graphics (Canvas)</li>
+              <li>&#128525;was working with graphics (Canvas)</li>
             </ul>
           </div>`
         },
@@ -114,7 +114,7 @@ export default {
           },
           html: true,
           description: `<div>
-            <b>DoBuy it is online-shop. Personal project. Completely implemented by me.</b>
+            <b>&#129299;DoBuy it is online-shop. Personal project. Completely implemented by me.</b>
             <br>
             During I have worked on the project: 
             <ul>
@@ -157,7 +157,7 @@ export default {
           period: '08.2021  - 02.2022',
           html: true,
           description: `<div>
-            <b>Parser of bookmaker's sites, for searching surebets.  Personal project. Not in the public domain</b>
+            <b>&#129323; Parser of bookmaker's sites, for searching surebets.  Personal project. Not in the public domain</b>
             <br>
             The application allows you to find surebets in real time
             <br>
@@ -166,7 +166,7 @@ export default {
               <li>was building the architecture of the client and backend part</li>
               <li>was designing  data base</li>
               <li>created parsing sysmem</li>
-              <li>created system of matching commands names</li>
+              <li>&#129301;created system of matching commands names</li>
             </ul>
           </div>`
         }
