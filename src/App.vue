@@ -22,7 +22,7 @@ import SwitchCv from './components/atoms/SwitchCv'
 
 export default {
   name: 'App',
-  components: {HeaderCv, SidebarCv, ExperienceCv, SwitchCv},
+  components: { HeaderCv, SidebarCv, ExperienceCv, SwitchCv },
   methods: {
     setTheme (event) {
       const value = event.target.checked
@@ -38,6 +38,7 @@ export default {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 #app hr {
   border: 1px solid;
   border-color: white;
@@ -46,6 +47,7 @@ export default {
   margin-block-end: var(--padding-double);
   overflow: hidden;
 }
+
 html[color-scheme='dark'] #app hr {
   border-color: #696969;
 }
@@ -64,10 +66,12 @@ html[color-scheme='dark'] #app hr {
   align-items: center;
   color: var(--txt-secondary-color);
 }
+
 .header__sticky__switch-theme .switch {
   margin-right: var(--padding);
   margin-left: var(--padding);
 }
+
 main {
   --gap: calc(var(--padding-double) * 2);
   display: grid;
@@ -86,4 +90,9 @@ main {
     margin-block-end: calc(var(--padding-double) * 2);
   }
 }
-</style>
+
+@media (max-height: 550px) {
+  .header__sticky {
+    position: unset;
+  }
+}</style>
