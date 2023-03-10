@@ -1,7 +1,13 @@
 <template>
   <label class="switch">
     <div class="switch__container">
-      <input class="switch__input" type="checkbox" name="check" />
+      <input
+        class="switch__input"
+        type="checkbox"
+        name="check"
+        :checked="modelValue"
+        @change="$emit('update:modelValue', $event.target.checked)"
+      />
       <div class="switch__toggle"></div>
     </div>
   </label>
@@ -9,7 +15,14 @@
 
 <script>
 export default {
-  name: 'SwitchCv'
+  name: 'SwitchCv',
+  props: {
+    modelValue: {
+      type: Boolean,
+      default: false
+    }
+  },
+  emits: ['update:modelValue']
 }
 </script>
 
@@ -30,7 +43,7 @@ export default {
 }
 html[color-scheme='dark'] .switch__container {
   box-shadow: inset var(--shadow-base-part1--dark),
-  inset var(--shadow-base-part2--dark), inset var(--shadow-base-part3--dark);
+    inset var(--shadow-base-part2--dark), inset var(--shadow-base-part3--dark);
 }
 .switch__input {
   display: none;
