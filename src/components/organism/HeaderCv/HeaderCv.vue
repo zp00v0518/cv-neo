@@ -11,7 +11,7 @@
         <span>
           <a
             class="download-link"
-            href="src/assets/cv.pdf"
+            :href="cvPdf"
             download="Dmytro Tarabanov.pdf"
             >download CV</a
           >
@@ -24,6 +24,7 @@
 
 <script>
 import avatarSrc from "../../../assets/7.png";
+import cvPdf from "../../../assets/cv.pdf";
 
 import AvatarCv from "../../atoms/AvatarCv";
 import ContactsCv from "../../moleculs/ContactsCv";
@@ -33,6 +34,7 @@ export default {
   data() {
     return {
       avatarSrc,
+      cvPdf,
     };
   },
 };
