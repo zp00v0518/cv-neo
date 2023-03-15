@@ -2,11 +2,20 @@
   <div class="header-cv">
     <AvatarCv class="header-cv__avatar" :img-src="avatarSrc"> </AvatarCv>
     <div class="header-cv__body">
-      <span class="header-cv__body--name">Dmytro Tarabanov</span>
+      <span class="header-cv__body--name">Dmytro Tarabanov </span>
+
       <h1 class="header-cv__body--position">Javascript Developer (Vue)</h1>
       <div class="header-cv__body__descr">
-        <span class="header-cv__body__descr--item">ukranian</span>
-        <span class="header-cv__body__descr--item">Kiev, Ukraine</span>
+        <!-- <span>ukranian</span> -->
+        <span>Kiev, Ukraine </span>
+        <span>
+          <a
+            class="download-link"
+            :href="cvPdf"
+            download="Dmytro Tarabanov.pdf"
+            >download CV</a
+          >
+        </span>
       </div>
       <ContactsCv />
     </div>
@@ -14,19 +23,21 @@
 </template>
 
 <script>
-import avatarSrc from '../../../assets/7.png'
+import avatarSrc from "../../../assets/7.png";
+import cvPdf from "../../../assets/cv.pdf";
 
-import AvatarCv from '../../atoms/AvatarCv'
-import ContactsCv from '../../moleculs/ContactsCv'
+import AvatarCv from "../../atoms/AvatarCv";
+import ContactsCv from "../../moleculs/ContactsCv";
 export default {
-  name: 'HeaderCv',
-  components: {AvatarCv, ContactsCv},
+  name: "HeaderCv",
+  components: { AvatarCv, ContactsCv },
   data() {
     return {
-      avatarSrc
-    }
-  }
-}
+      avatarSrc,
+      cvPdf,
+    };
+  },
+};
 </script>
 
 <style>
@@ -73,9 +84,14 @@ export default {
   margin-block-end: var(--padding-double);
 }
 
+.download-link {
+  color: inherit;
+  font-weight: 600;
+}
+
 @media (max-width: 700px) {
   .header-cv__body--position {
-    --txt-size: 1.6rem
+    --txt-size: 1.6rem;
   }
 }
 @media (max-width: 550px) {
