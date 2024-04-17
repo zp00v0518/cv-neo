@@ -31,8 +31,8 @@ export default {
         {icon: 'skype', href: 'skype:zp00v0518', title: 'zp00v0518'},
         {
           icon: 'telegram',
-          href: 'https://t.me/pol_pinter',
-          title: '@pol_pinter'
+          href: 'https://t.me/pol_pintero',
+          title: '@pol_pintero'
         }
       ]
     }

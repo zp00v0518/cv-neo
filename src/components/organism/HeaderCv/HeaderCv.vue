@@ -9,10 +9,7 @@
         <!-- <span>ukranian</span> -->
         <span>Kiev, Ukraine </span>
         <span>
-          <a
-            class="download-link"
-            :href="cvPdf"
-            download="Dmytro Tarabanov.pdf"
+          <a class="download-link" :href="cvPdf" download="Dmytro Tarabanov.pdf"
             >download CV</a
           >
         </span>
@@ -23,21 +20,21 @@
 </template>
 
 <script>
-import avatarSrc from "../../../assets/7.png";
-import cvPdf from "../../../assets/cv.pdf";
+import avatarSrc from '../../../assets/7.png'
+import cvPdf from '../../../assets/cv.pdf'
 
-import AvatarCv from "../../atoms/AvatarCv";
-import ContactsCv from "../../moleculs/ContactsCv";
+import AvatarCv from '../../atoms/AvatarCv'
+import ContactsCv from '../../moleculs/ContactsCv'
 export default {
-  name: "HeaderCv",
-  components: { AvatarCv, ContactsCv },
+  name: 'HeaderCv',
+  components: {AvatarCv, ContactsCv},
   data() {
     return {
       avatarSrc,
-      cvPdf,
-    };
-  },
-};
+      cvPdf
+    }
+  }
+}
 </script>
 
 <style>
@@ -92,14 +89,17 @@ export default {
 @media (max-width: 700px) {
   .header-cv__body--position {
     --txt-size: 1.6rem;
+    margin-block-start: calc(var(--padding-double) / 2);
+    margin-block-end: calc(var(--padding-double) / 2);
   }
 }
-@media (max-width: 550px) {
+
+/* @media (max-width: 550px) {
   .header-cv__body--position {
     height: calc(var(--txt-size) * 2);
     line-height: var(--txt-size);
   }
-}
+} */
 
 @media (max-width: 460px) {
   .header-cv {

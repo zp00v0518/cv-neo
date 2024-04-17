@@ -23,6 +23,7 @@ import dobuyIcon from '../../../assets/dobuy.svg'
 import jcashIcon from '../../../assets/jcash.svg'
 import lordsIcon from '../../../assets/lords.svg'
 import defaultIcon from '../../../assets/default.svg'
+import netgameIcon from '../../../assets/netgame.png'
 
 export default {
   name: 'ExperienceCv',
@@ -31,9 +32,34 @@ export default {
     return {
       cardList: [
         {
+          icon: netgameIcon,
+          companyName: 'Netgame',
+          position: 'senior Javascript Developer (Vue)',
+          period: '07.2023 - to present',
+          badge: {
+            href: 'https://netgamenv.com/',
+            title: 'netgame.com'
+          },
+          html: true,
+          description: `<div>
+            <b>Software provider in the iGaming industry. </b>
+            <br>
+            While working in the company, my tasks included: 
+            <ul>
+              <li>working on the project performance</li> 
+              <li>code refactoring</li> 
+              <li>implementation of AB testing</li> 
+              <li>deployment of the project to production</li> 
+              <li>creation of new pages/components</li> 
+              <li>implementation of website redesign</li> 
+              <li>codereview</li> 
+            </ul>
+          </div>`
+        },
+        {
           icon: ubjsIcon,
           companyName: 'UBjs',
-          position: 'Javascript Developer (Vue)',
+          position: 'middle Javascript Developer (Vue)',
           period: '08.2021 - 01.2023',
           badge: {
             href: 'https://unitybase.info/api/adminui-vue/index.html',
@@ -54,7 +80,7 @@ export default {
         {
           icon: toriIcon,
           companyName: 'Tori',
-          position: 'Javascript Developer (Vue)',
+          position: 'middle Javascript Developer (Vue)',
           period: '11.2018  - 06.2021',
           badge: {
             href: 'https://toriapps.com/',
@@ -64,7 +90,7 @@ export default {
           description: `<div>
             <b>Tori is a flexible HRIS management system with a corporate portal and recruitment features inside</b> 
             <br>
-            During I have worked on the project: 
+            While working in the company, my tasks included: 
             <ul>
               <li>was building the architecture of the client part</li>
               <li>&#128579; was implementing dynamic constructionand display of pages</li>
@@ -106,7 +132,7 @@ export default {
         {
           icon: dobuyIcon,
           companyName: 'DoBuy',
-          position: 'Full Stack Developer',
+          position: 'junior Full Stack Developer',
           period: '06.2017  - 08.2018',
           badge: {
             href: 'http://dobuy.com.ua/',
@@ -132,7 +158,7 @@ export default {
         {
           icon: jcashIcon,
           companyName: 'Jcash',
-          position: 'Javascript Developer (Vue)',
+          position: 'junior Javascript Developer (Vue)',
           period: '08.2018  - 10.2018',
           badge: {
             href: 'https://jcash.co/uk/',
@@ -166,7 +192,7 @@ export default {
               <li>was building the architecture of the client and backend part</li>
               <li>was designing  data base</li>
               <li>created parsing sysmem</li>
-              <li>&#129301;created system of matching commands names</li>
+              <li>&#129301;created system of matching teams names</li>
             </ul>
           </div>`
         }
