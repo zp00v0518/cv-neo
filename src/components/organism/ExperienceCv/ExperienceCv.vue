@@ -34,7 +34,7 @@ export default {
         {
           icon: netgameIcon,
           companyName: 'Netgame',
-          position: 'senior Javascript Developer (Vue)',
+          position: 'Senior Javascript Developer (Vue)',
           period: '07.2023 - to present',
           badge: {
             href: 'https://netgamenv.com/',
@@ -47,6 +47,8 @@ export default {
             While working in the company, my tasks included: 
             <ul>
               <li>working on the project performance</li> 
+              <li>migrate from Vue2 to Vue3</li> 
+              <li>migrate from Nodejs v12 to v18</li> 
               <li>code refactoring</li> 
               <li>implementation of AB testing</li> 
               <li>deployment of the project to production</li> 
