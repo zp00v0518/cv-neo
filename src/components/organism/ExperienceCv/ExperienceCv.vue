@@ -35,7 +35,7 @@ export default {
           icon: netgameIcon,
           companyName: 'Netgame',
           position: 'Senior Javascript Developer (Vue)',
-          period: '07.2023 - to present',
+          period: '06.2023 - to present',
           badge: {
             href: 'https://netgamenv.com/',
             title: 'netgame.com'
