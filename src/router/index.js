@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/download-cv",
     name: "download-cv",
-    component: () => import("../pages/DownloadCv/DownloadCv.vue"),
+    component: () => import("../pages/DownloadCV/DownloadCv.vue"),
   },
   // {
   //   path: '/about',
