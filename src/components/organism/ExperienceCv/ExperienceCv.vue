@@ -15,30 +15,30 @@
 </template>
 
 <script>
-import CardCv from '../../moleculs/CardCv'
+import CardCv from "../../moleculs/CardCv";
 
-import toriIcon from '../../../assets/tori.svg'
-import ubjsIcon from '../../../assets/ubjs.svg'
-import dobuyIcon from '../../../assets/dobuy.svg'
-import jcashIcon from '../../../assets/jcash.svg'
-import lordsIcon from '../../../assets/lords.svg'
-import defaultIcon from '../../../assets/default.svg'
-import netgameIcon from '../../../assets/netgame.png'
+import toriIcon from "../../../assets/tori.svg";
+import ubjsIcon from "../../../assets/ubjs.svg";
+import dobuyIcon from "../../../assets/dobuy.svg";
+import jcashIcon from "../../../assets/jcash.svg";
+import lordsIcon from "../../../assets/lords.svg";
+import defaultIcon from "../../../assets/default.svg";
+import netgameIcon from "../../../assets/netgame.png";
 
 export default {
-  name: 'ExperienceCv',
-  components: {CardCv},
+  name: "ExperienceCv",
+  components: { CardCv },
   data() {
     return {
       cardList: [
         {
           icon: netgameIcon,
-          companyName: 'Netgame',
-          position: 'Senior Javascript Developer (Vue)',
-          period: '06.2023 - to present',
+          companyName: "Netgame",
+          position: "Senior Javascript Developer (Vue)",
+          period: "06.2023 - to present",
           badge: {
-            href: 'https://netgamenv.com/',
-            title: 'netgame.com'
+            href: "https://netgamenv.com/",
+            title: "netgame.com",
           },
           html: true,
           description: `<div>
@@ -56,16 +56,16 @@ export default {
               <li>implementation of website redesign</li> 
               <li>codereview</li> 
             </ul>
-          </div>`
+          </div>`,
         },
         {
           icon: ubjsIcon,
-          companyName: 'UBjs',
-          position: 'middle Javascript Developer (Vue)',
-          period: '08.2021 - 01.2023',
+          companyName: "UBjs",
+          position: "middle Javascript Developer (Vue)",
+          period: "08.2021 - 01.2023",
           badge: {
-            href: 'https://unitybase.info/api/adminui-vue/index.html',
-            title: 'unitybase.info'
+            href: "https://unitybase.info/api/adminui-vue/index.html",
+            title: "unitybase.info",
           },
           html: true,
           description: `<div>
@@ -77,16 +77,16 @@ export default {
               <li> &#128579; rewrite old components from ExtJs on Vue</li>
               <li>was refactoring and was fixing bugs in legacy code</li>
             </ul>
-          </div>`
+          </div>`,
         },
         {
           icon: toriIcon,
-          companyName: 'Tori',
-          position: 'middle Javascript Developer (Vue)',
-          period: '11.2018  - 06.2021',
+          companyName: "Tori",
+          position: "middle Javascript Developer (Vue)",
+          period: "11.2018  - 06.2021",
           badge: {
-            href: 'https://toriapps.com/',
-            title: 'toriapps.com'
+            href: "https://toriapps.com/",
+            title: "toriapps.com",
           },
           html: true,
           description: `<div>
@@ -105,16 +105,16 @@ export default {
               <li>was discussing with the customer new features</li>
               <li>and many other things that were needed to create an HRIS system</li>
             </ul>
-          </div>`
+          </div>`,
         },
         {
           icon: lordsIcon,
-          companyName: 'Lords MMO RTS',
-          position: 'Full Stack Developer',
-          period: '06.2017  - 08.2018',
+          companyName: "Lords MMO RTS",
+          position: "Full Stack Developer",
+          period: "06.2017  - 08.2018",
           badge: {
-            href: 'http://lords.dobuy.com.ua/',
-            title: 'lords.dobuy.com.ua'
+            href: "http://lords.dobuy.com.ua/",
+            title: "lords.dobuy.com.ua",
           },
           html: true,
           description: `<div>
@@ -129,16 +129,16 @@ export default {
               <li>was working on autorization and autefication</li>
               <li>&#128525;was working with graphics (Canvas)</li>
             </ul>
-          </div>`
+          </div>`,
         },
         {
           icon: dobuyIcon,
-          companyName: 'DoBuy',
-          position: 'junior Full Stack Developer',
-          period: '06.2017  - 08.2018',
+          companyName: "DoBuy",
+          position: "junior Full Stack Developer",
+          period: "06.2017  - 08.2018",
           badge: {
-            href: 'http://dobuy.com.ua/',
-            title: 'dobuy.com.ua'
+            href: "http://dobuy.com.ua/",
+            title: "dobuy.com.ua",
           },
           html: true,
           description: `<div>
@@ -154,17 +154,17 @@ export default {
               <li>Implemented filtering, sorting, goods; pagination</li>
               <li>&#128522; My pride: developed a system for online measurements of clothing</li>
             </ul>
-          </div>`
+          </div>`,
         },
 
         {
           icon: jcashIcon,
-          companyName: 'Jcash',
-          position: 'junior Javascript Developer (Vue)',
-          period: '08.2018  - 10.2018',
+          companyName: "Jcash",
+          position: "junior Javascript Developer (Vue)",
+          period: "08.2018  - 10.2018",
           badge: {
-            href: 'https://jcash.co/uk/',
-            title: 'jcash.co'
+            href: "https://jcash.co/uk/",
+            title: "jcash.co",
           },
           html: true,
           description: `<div>
@@ -176,13 +176,13 @@ export default {
               <li>was connecting authorization through third-party services: Google, FB, Telegram</li>
               <li>was developing animation</li>
             </ul>
-          </div>`
+          </div>`,
         },
         {
           icon: defaultIcon,
-          companyName: 'BetParser',
-          position: 'Full Stack Developer',
-          period: '08.2021  - 02.2022',
+          companyName: "BetParser",
+          position: "Full Stack Developer",
+          period: "08.2021  - 02.2022",
           html: true,
           description: `<div>
             <b>&#129323; Parser of bookmaker's sites, for searching surebets.  Personal project. Not in the public domain</b>
@@ -196,12 +196,12 @@ export default {
               <li>created parsing sysmem</li>
               <li>&#129301;created system of matching teams names</li>
             </ul>
-          </div>`
-        }
-      ]
-    }
-  }
-}
+          </div>`,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
