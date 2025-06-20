@@ -20,21 +20,21 @@
 </template>
 
 <script>
-import avatarSrc from '../../../assets/7.png'
-import cvPdf from '../../../assets/cv.pdf'
+import avatarSrc from "../../../assets/7.png";
+import cvPdf from "../../../assets/cv.pdf";
 
-import AvatarCv from '../../atoms/AvatarCv'
-import ContactsCv from '../../moleculs/ContactsCv'
+import AvatarCv from "../../atoms/AvatarCv";
+import ContactsCv from "../../moleculs/ContactsCv";
 export default {
-  name: 'HeaderCv',
-  components: {AvatarCv, ContactsCv},
+  name: "HeaderCv",
+  components: { AvatarCv, ContactsCv },
   data() {
     return {
       avatarSrc,
-      cvPdf
-    }
-  }
-}
+      cvPdf,
+    };
+  },
+};
 </script>
 
 <style>
@@ -56,6 +56,8 @@ export default {
 .header-cv__body__descr {
   display: flex;
   flex-direction: column;
+  line-height: 150%;
+  margin-block-end: var(--padding-double);
 }
 
 .header-cv__body--name {
@@ -76,11 +78,6 @@ export default {
   -webkit-text-fill-color: transparent;
 }
 
-.header-cv__body__descr {
-  line-height: 150%;
-  margin-block-end: var(--padding-double);
-}
-
 .download-link {
   color: inherit;
   font-weight: 600;
@@ -91,6 +88,18 @@ export default {
     --txt-size: 1.6rem;
     margin-block-start: calc(var(--padding-double) / 2);
     margin-block-end: calc(var(--padding-double) / 2);
+  }
+
+  .header-cv__body__descr{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-cv__avatar{
+    max-width: 100px;
+    margin-right: calc(var(--padding-double) * 3);
+    padding: calc(var(--padding) / 1.5);
   }
 }
 
