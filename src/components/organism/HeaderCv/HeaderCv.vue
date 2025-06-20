@@ -113,6 +113,7 @@ export default {
 @media (max-width: 460px) {
   .header-cv {
     flex-direction: column;
+    padding-bottom: var(--padding);
   }
 }
 </style>
