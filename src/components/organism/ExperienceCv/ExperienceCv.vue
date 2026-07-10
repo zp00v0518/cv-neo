@@ -10,6 +10,7 @@
       :badge="card.badge"
       :description="card.description"
       :html="card.html"
+      :invert-icon="card.invertIcon"
     ></CardCv>
   </div>
 </template>
@@ -24,6 +25,7 @@ import jcashIcon from "../../../assets/jcash.svg";
 import lordsIcon from "../../../assets/lords.svg";
 import defaultIcon from "../../../assets/default.svg";
 import netgameIcon from "../../../assets/netgame.png";
+import ndaIcon from "../../../assets/nda.svg";
 
 export default {
   name: "ExperienceCv",
@@ -32,10 +34,37 @@ export default {
     return {
       cardList: [
         {
+          icon: ndaIcon,
+          invertIcon: true,
+          companyName: "Igaming",
+          position: "Team Lead Frontend",
+          period: "09.2024 - 08.2026",
+          html: true,
+          description: `<div>
+            <b>Software provider in the iGaming industry. </b>
+            <br>
+            While working in the company, my tasks included: 
+            <ul>
+              <li>Led the development of the platform from the ground up, from initial concept to production deployment.</li> 
+              <li>Defined the technology stack, development tools, and engineering standard</li> 
+              <li>Designed and evolved the overall system architecture</li> 
+              <li>Integrated the platform with KYCID for identity verification</li> 
+              <li>Integrated payment providers and payment methods</li> 
+              <li>Planned, coordinated, and delivered production releases</li> 
+              <li>Owned the platform's stability, reliability, and availability</li> 
+              <li>Optimized application performance and scalability</li> 
+              <li>Conducted code reviews and enforced engineering best practices</li> 
+              <li>Facilitated backlog grooming, technical discussions, and effort estimation</li> 
+              <li>Conducted technical interviews and participated in the hiring process</li> 
+              <li>Led and mentored the development team, supporting technical growth and delivery</li> 
+            </ul>
+          </div>`,
+        },
+        {
           icon: netgameIcon,
           companyName: "Netgame",
           position: "Senior Javascript Developer (Vue)",
-          period: "06.2023 - to present",
+          period: "06.2023 - 08.2024",
           badge: {
             href: "https://netgamenv.com/",
             title: "netgame.com",

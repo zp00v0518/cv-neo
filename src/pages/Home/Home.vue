@@ -70,6 +70,7 @@ html[color-scheme="dark"] #app hr {
   position: sticky;
   top: 0px;
   background: var(--bg-primary);
+  z-index: 1;
 }
 
 .header__sticky__switch-theme {

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <style>
+    .stroke { fill: none; stroke: #333; stroke-width: 30; stroke-linecap: round; stroke-linejoin: round; }
+    .text { fill: #333; font-family: sans-serif; font-weight: bold; }
+  </style>
+  <!-- Контур документа -->
+  <rect class="stroke" x="40" y="40" width="420" height="570" rx="30" />
+  <!-- Текст "NDA" -->
+  <text x="90" y="200" class="text" font-size="120">NDA</text>
+  <!-- Рядки -->
+  <line class="stroke" x1="90" y1="280" x2="410" y2="280" />
+  <line class="stroke" x1="90" y1="360" x2="410" y2="360" />
+  <line class="stroke" x1="90" y1="440" x2="410" y2="440" />
+  <line class="stroke" x1="90" y1="520" x2="410" y2="520" />
+</svg>

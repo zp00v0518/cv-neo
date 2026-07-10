@@ -1,5 +1,5 @@
 <template>
-  <section class="card">
+  <section class="card" :class="{ invertIcon }">
     <a
       v-if="badge"
       class="card__item card__item__icon"
@@ -34,43 +34,47 @@
 </template>
 
 <script>
-import AvatarCv from '../../atoms/AvatarCv'
-import BadgeBtn from '../../atoms/BadgeBtn'
+import AvatarCv from "../../atoms/AvatarCv";
+import BadgeBtn from "../../atoms/BadgeBtn";
 
 export default {
-  name: 'CardCv',
-  components: {AvatarCv, BadgeBtn},
+  name: "CardCv",
+  components: { AvatarCv, BadgeBtn },
   props: {
     icon: {
       type: String,
-      default: ''
+      default: "",
+    },
+    invertIcon: {
+      type: Boolean,
+      default: false,
     },
     companyName: {
       type: String,
-      default: ''
+      default: "",
     },
     position: {
       type: String,
-      default: ''
+      default: "",
     },
     period: {
       type: String,
-      default: ''
+      default: "",
     },
     description: {
       type: String,
-      default: ''
+      default: "",
     },
     html: {
       type: Boolean,
-      default: false
+      default: false,
     },
     badge: {
       type: Object,
-      default: undefined
-    }
-  }
-}
+      default: undefined,
+    },
+  },
+};
 </script>
 
 <style>
@@ -85,6 +89,10 @@ export default {
   box-shadow: inset var(--shadow-base-part1), inset var(--shadow-base-part2),
     inset var(--shadow-base-part3);
   border-radius: 25px;
+}
+
+[color-scheme="dark"] .card.invertIcon .avatar-cv img {
+  filter: invert(1);
 }
 
 .card .avatar-cv {
