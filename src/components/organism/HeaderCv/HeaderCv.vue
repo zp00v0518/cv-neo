@@ -20,7 +20,11 @@
 </template>
 
 <script>
-import avatarSrc from "../../../assets/7.png";
+// import avatarSrc from "../../../assets/7.png";
+// import avatarSrc from "../../../assets/avatar.png";
+import avatarSrc from "../../../assets/avatar_2.png";
+// import avatarSrc from "../../../assets/avatar_3.jpg";
+// import avatarSrc from "../../../assets/avatar_2.jpg";
 import cvPdf from "../../../assets/cv.pdf";
 
 import AvatarCv from "../../atoms/AvatarCv";
@@ -48,6 +52,11 @@ export default {
   max-width: 150px;
   margin-right: calc(var(--padding-double) * 2);
 }
+
+.header-cv__avatar img {
+  object-fit: cover;
+}
+
 .header-cv__body {
   display: flex;
   flex-direction: column;
@@ -90,13 +99,13 @@ export default {
     margin-block-end: calc(var(--padding-double) / 2);
   }
 
-  .header-cv__body__descr{
+  .header-cv__body__descr {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  .header-cv__avatar{
+  .header-cv__avatar {
     max-width: 100px;
     margin-right: calc(var(--padding-double) * 3);
     padding: calc(var(--padding) / 1.5);
