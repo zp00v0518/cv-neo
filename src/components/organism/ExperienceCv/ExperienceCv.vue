@@ -33,6 +33,24 @@ export default {
   data() {
     return {
       cardList: [
+                {
+          icon: ndaIcon,
+          invertIcon: true,
+          companyName: "Miltech",
+          position: "Project Manager",
+          period: "08.2026 - to present",
+          html: true,
+          description: `<div>
+            <b>Miltech</b>
+            <br>
+            <ul>
+              <li>Development of the product's technical specifications and tactical-technical characteristics in collaboration with engineers</li> 
+              <li>Organizing effective collaboration between teams</li> 
+              <li>Product integration</li> 
+            </ul>
+          </div>`,
+        },
+
         {
           icon: ndaIcon,
           invertIcon: true,
